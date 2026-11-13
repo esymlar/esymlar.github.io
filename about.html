@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>About | Emmanuell Symlar</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
-<script src="js/main.js"></script>
 <body>
 <nav class="topnav">
     <div class="nav-left">
@@ -14,34 +14,38 @@
 
     <div class="nav-right" id="navLinks">
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <a href="about.html" class="active">About</a>
         <a href="skills.html">Skills</a>
         <a href="projects.html">Projects</a>
         <a href="experience.html">Experience</a>
         <a href="contact.html">Contact</a>
     </div>
 
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-    <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle Navigation">☰</button>
+    <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle Theme">🌙</button>
 </nav>
 
-    <header class="hero">
-        <h1>About Me</h1>
-    </header>
+<header class="hero">
+    <h1>About Me</h1>
+</header>
 
-    <section class="intro">
-        <p>
-            I’m a Cloud & Infrastructure Engineer with hands-on experience supporting public-sector and 
-            enterprise workloads across AWS and Azure. My background includes multi-account cloud governance, 
-            Terraform automation, Windows Server administration, identity services, hybrid networking, and 
-            production-grade operational support.
-        </p>
-
-        <p>
-            I specialize in building secure, scalable cloud foundations, implementing Infrastructure-as-Code, 
-            automating repetitive tasks, and improving reliability through documentation, monitoring, and 
-            operational excellence.
-        </p>
+<main>
+    <section class="skills-container" style="max-width: 800px;">
+        <div class="skill-card" style="text-align: left; padding: 2rem;">
+            <p style="margin-top: 0; line-height: 1.6;">
+                I’m a Cloud & Infrastructure Engineer with hands-on experience supporting public-sector and 
+                enterprise workloads across AWS and Azure. My background includes multi-account cloud governance, 
+                Terraform automation, Windows Server administration, identity services, hybrid networking, and 
+                production-grade operational support.
+            </p>
+            <p style="margin-bottom: 0; line-height: 1.6;">
+                I specialize in building secure, scalable cloud foundations, implementing Infrastructure-as-Code, 
+                automating repetitive tasks, and improving reliability through documentation, monitoring, and 
+                operational excellence.
+            </p>
+        </div>
     </section>
+</main>
+
 </body>
 </html>
