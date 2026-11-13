@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emmanuell Symlar | Cloud Infrastructure & DevOps Engineer</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
-<script src="js/main.js"></script>
 <body>
 <nav class="topnav">
     <div class="nav-left">
@@ -14,7 +14,7 @@
     </div>
 
     <div class="nav-right" id="navLinks">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
         <a href="skills.html">Skills</a>
         <a href="projects.html">Projects</a>
@@ -22,29 +22,33 @@
         <a href="contact.html">Contact</a>
     </div>
 
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-    <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle Navigation">☰</button>
+    <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle Theme">🌙</button>
 </nav>
 
+<header class="hero">
+    <h1>Emmanuell Symlar</h1>
+    <h2>Cloud Infrastructure & DevOps Engineer</h2>
+    <p style="margin-top: 10px; font-size: 1rem; opacity: 0.9;">New Port Richey, FL • Remote-Ready • U.S. Citizen</p>
+</header>
 
-    <header class="hero">
-        <h1>Emmanuell Symlar</h1>
-        <h2>Cloud Infrastructure & DevOps Engineer</h2>
-        <p>New Port Richey, FL • Remote-Ready • U.S. Citizen</p>
-    </header>
-
-    <section class="intro">
-        <p>
-            I design secure, scalable cloud foundations across AWS and Azure. My work focuses on 
-            multi-account governance, Infrastructure-as-Code, automation, identity services, hybrid cloud, 
-            and production-grade infrastructure support.
-        </p>
+<main>
+    <section class="skills-container" style="max-width: 800px;">
+        <div class="skill-card" style="padding: 2.5rem; text-align: center;">
+            <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 0; margin-bottom: 2rem;">
+                I design secure, scalable cloud foundations across AWS and Azure. My work focuses on 
+                multi-account governance, Infrastructure-as-Code, automation, identity services, hybrid cloud, 
+                and production-grade infrastructure support.
+            </p>
+            
+            <div class="links" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+                <a href="#" class="btn">Download Resume</a>
+                <a href="https://linkedin.com/in/emmanuellsymlar" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn</a>
+                <a href="https://github.com/esymlar" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
+            </div>
+        </div>
     </section>
+</main>
 
-    <div class="links">
-        <a href="#" class="btn">Download Resume</a>
-        <a href="https://linkedin.com/in/emmanuellsymlar" class="btn">LinkedIn</a>
-        <a href="https://github.com/esymlar" class="btn">GitHub</a>
-    </div>
 </body>
 </html>
