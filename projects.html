@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Projects | Emmanuell Symlar</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
-<script src="js/main.js"></script>
 <body>
 <nav class="topnav">
     <div class="nav-left">
@@ -16,50 +16,59 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="skills.html">Skills</a>
-        <a href="projects.html">Projects</a>
+        <a href="projects.html" class="active">Projects</a>
         <a href="experience.html">Experience</a>
         <a href="contact.html">Contact</a>
     </div>
 
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-    <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle Navigation">☰</button>
+    <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle Theme">🌙</button>
 </nav>
 
+<header class="hero">
+    <h1>Featured Projects</h1>
+</header>
 
-    <header class="hero">
-        <h1>Projects</h1>
-    </header>
+<main>
+    <section class="skills-container">
+        
+        <div class="skill-card" style="text-align: left;">
+            <h2 style="color: var(--accent); margin-bottom: 0.5rem;">AWS Landing Zone with Terraform</h2>
+            <p style="margin: 0; line-height: 1.5; font-size: 0.95rem;">
+                Designed and deployed a multi-account AWS Landing Zone using AWS Organizations and Terraform. Implemented SCP guardrails, tagging standards, IAM role baselines, and centralized logging.
+            </p>
+        </div>
 
-    <section class="intro">
-        <h2>AWS Landing Zone with Terraform</h2>
-        <p>
-            Designed and deployed a multi-account AWS Landing Zone using AWS Organizations and Terraform. 
-            Implemented SCP guardrails, tagging standards, IAM role baselines, and centralized logging.
-        </p>
+        <div class="skill-card" style="text-align: left;">
+            <h2 style="color: var(--accent); margin-bottom: 0.5rem;">Azure Infrastructure Deployment with Bicep</h2>
+            <p style="margin: 0; line-height: 1.5; font-size: 0.95rem;">
+                Built a complete Azure environment using Bicep templates, including VMs, VNets, NSGs, storage accounts, and monitoring integrations.
+            </p>
+        </div>
 
-        <h2>Azure Infrastructure Deployment with Bicep</h2>
-        <p>
-            Built a complete Azure environment using Bicep templates, including VMs, VNets, NSGs, storage 
-            accounts, and monitoring integrations.
-        </p>
+        <div class="skill-card" style="text-align: left;">
+            <h2 style="color: var(--accent); margin-bottom: 0.5rem;">Hybrid Identity & Networking Lab</h2>
+            <p style="margin: 0; line-height: 1.5; font-size: 0.95rem;">
+                Created a hybrid lab environment connecting on-premises Active Directory to Azure AD using Azure AD Connect, ensuring seamless identity synchronization and hybrid access.
+            </p>
+        </div>
 
-        <h2>Hybrid Identity & Networking Lab</h2>
-        <p>
-            Created a hybrid lab environment connecting on-prem Active Directory to Azure AD using Azure 
-            AD Connect.
-        </p>
+        <div class="skill-card" style="text-align: left;">
+            <h2 style="color: var(--accent); margin-bottom: 0.5rem;">Infrastructure Automation</h2>
+            <p style="margin: 0; line-height: 1.5; font-size: 0.95rem;">
+                Developed automation scripts (PowerShell, Python, Bash) to streamline cloud operations, including VM provisioning, backup validation, tagging enforcement, and configuration checks.
+            </p>
+        </div>
 
-        <h2>Infrastructure Automation</h2>
-        <p>
-            Developed automation scripts to streamline cloud operations, including VM provisioning, backup 
-            validation, tagging enforcement, and configuration checks.
-        </p>
+        <div class="skill-card" style="text-align: left;">
+            <h2 style="color: var(--accent); margin-bottom: 0.5rem;">CI/CD Pipeline Support</h2>
+            <p style="margin: 0; line-height: 1.5; font-size: 0.95rem;">
+                Supported Azure DevOps and GitHub Actions pipelines for public-sector workloads, improving reliability, deployment consistency, and automated compliance verification.
+            </p>
+        </div>
 
-        <h2>CI/CD Pipeline Support</h2>
-        <p>
-            Supported Azure DevOps pipelines for public-sector workloads, improving reliability and 
-            deployment consistency.
-        </p>
     </section>
+</main>
+
 </body>
 </html>
