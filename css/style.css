@@ -58,6 +58,7 @@ body {
 .intro {
     max-width: 800px;
     margin: 40px auto;
+    padding: 0 20px;
     font-size: 18px;
     line-height: 1.6;
     text-align: center;
@@ -114,6 +115,12 @@ body {
     color: var(--accent-hover);
 }
 
+.nav-right a.active {
+    color: var(--accent-hover);
+    border-bottom: 2px solid var(--accent-hover);
+    padding-bottom: 4px;
+}
+
 /* ===========================
     NAV BUTTONS
    =========================== */
@@ -125,6 +132,10 @@ body {
     cursor: pointer;
     margin-left: 10px;
     color: var(--accent);
+}
+
+.menu-btn {
+    display: none;
 }
 
 .menu-btn:hover,
@@ -143,6 +154,15 @@ body {
         background: var(--nav-bg);
         padding: 20px;
         border-bottom: 1px solid var(--border);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .nav-right.open {
+        display: flex;
     }
 
     .nav-right a {
@@ -156,7 +176,7 @@ body {
 }
 
 /* ===========================
-    SKILLS GRID & CARDS (OPTION 2)
+    SKILLS & CARDS GRID (OPTION 2)
    =========================== */
 .skills-container {
     display: grid;
