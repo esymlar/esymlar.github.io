@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Experience | Emmanuell Symlar</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
-<script src="js/main.js"></script>
 <body>
 <nav class="topnav">
     <div class="nav-left">
@@ -17,44 +17,55 @@
         <a href="about.html">About</a>
         <a href="skills.html">Skills</a>
         <a href="projects.html">Projects</a>
-        <a href="experience.html">Experience</a>
+        <a href="experience.html" class="active">Experience</a>
         <a href="contact.html">Contact</a>
     </div>
 
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-    <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle Navigation">☰</button>
+    <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle Theme">🌙</button>
 </nav>
 
+<header class="hero">
+    <h1>Professional Experience</h1>
+</header>
 
-    <header class="hero">
-        <h1>Experience</h1>
-    </header>
+<main>
+    <section class="skills-container">
+        
+        <div class="skill-card" style="text-align: left;">
+            <h2 style="color: var(--accent); margin-bottom: 0.5rem;">Solutions Analyst (Cloud & Infrastructure)</h2>
+            <p style="margin: 0 0 0.5rem 0; font-weight: bold; font-size: 0.95rem;">Deloitte (Government & Public Services) | 2022 – 2026</p>
+            <p style="margin: 0; line-height: 1.5; font-size: 0.95rem;">
+                Supported and troubleshot AWS and hybrid cloud environments, server infrastructure, Active Directory, RHEL workloads, Terraform IaC, automation scripts, and ITIL-aligned incident management.
+            </p>
+        </div>
 
-    <section class="intro">
-        <h2>Cloud & Infrastructure Engineer — Deloitte (Public Sector)</h2>
-        <p>2022 – 2026</p>
-        <p>
-            Supported AWS and Azure environments, Terraform IaC, Windows Server, identity services, 
-            automation, documentation, and hybrid infrastructure.
-        </p>
+        <div class="skill-card" style="text-align: left;">
+            <h2 style="color: var(--accent); margin-bottom: 0.5rem;">Infrastructure Support Technician</h2>
+            <p style="margin: 0 0 0.5rem 0; font-weight: bold; font-size: 0.95rem;">Full Sail University | 2019 – 2021</p>
+            <p style="margin: 0; line-height: 1.5; font-size: 0.95rem;">
+                Server maintenance, Windows Server & AD administration, virtualization, storage, networking, and distributed operational support.
+            </p>
+        </div>
 
-        <h2>Infrastructure Support Technician — Full Sail University</h2>
-        <p>2019 – 2021</p>
-        <p>
-            Server maintenance, virtualization, storage, networking, documentation, and operational support.
-        </p>
+        <div class="skill-card" style="text-align: left;">
+            <h2 style="color: var(--accent); margin-bottom: 0.5rem;">Intelligence Analyst</h2>
+            <p style="margin: 0 0 0.5rem 0; font-weight: bold; font-size: 0.95rem;">U.S. Army | 2017 – 2018</p>
+            <p style="margin: 0; line-height: 1.5; font-size: 0.95rem;">
+                Executed secure information handling, structured analysis, and mission-critical system management under rigorous compliance protocols.
+            </p>
+        </div>
 
-        <h2>Intelligence Analyst — U.S. Army</h2>
-        <p>2017 – 2018</p>
-        <p>
-            Structured execution, secure information handling, mission-critical systems.
-        </p>
+        <div class="skill-card" style="text-align: left;">
+            <h2 style="color: var(--accent); margin-bottom: 0.5rem;">Managing Director</h2>
+            <p style="margin: 0 0 0.5rem 0; font-weight: bold; font-size: 0.95rem;">Higanbana Digital Media | 2015 – Present</p>
+            <p style="margin: 0; line-height: 1.5; font-size: 0.95rem;">
+                Directed cloud-hosted platform operations, server administration, automation workflows, and end-to-end technical execution.
+            </p>
+        </div>
 
-        <h2>Managing Director — Higanbana Digital Media</h2>
-        <p>2015 – Present</p>
-        <p>
-            Cloud-hosted platform management, automation, documentation, and digital operations.
-        </p>
     </section>
+</main>
+
 </body>
 </html>
